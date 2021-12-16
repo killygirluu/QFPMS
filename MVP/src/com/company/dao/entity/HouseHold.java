@@ -2,7 +2,7 @@ package com.company.dao.entity;
 
 import java.util.Date;
 
-public class HouseHould {
+public class HouseHold {
     public int id;
     public String name;
     public String idcard;
@@ -10,10 +10,10 @@ public class HouseHould {
     public String occupation;
     public Date birthday;
     public String gender;
-    public String hiredate;
+    public Date hiredate;
     public int del;
 
-    public HouseHould(int id, String name, String idcard, String mobile, String occupation, Date birthday, String gender, String hiredate, int del) {
+    public HouseHold(int id, String name, String idcard, String mobile, String occupation, Date birthday, String gender, Date hiredate, int del) {
         this.id = id;
         this.name = name;
         this.idcard = idcard;
@@ -25,7 +25,7 @@ public class HouseHould {
         this.del = del;
     }
 
-    public HouseHould(String name, String idcard, String mobile, String occupation, Date birthday, String gender, String hiredate, int del) {
+    public HouseHold(String name, String idcard, String mobile, String occupation, Date birthday, String gender, Date hiredate, int del) {
         this.name = name;
         this.idcard = idcard;
         this.mobile = mobile;
@@ -38,7 +38,7 @@ public class HouseHould {
 
     @Override
     public String toString() {
-        return "HouseHould{" +
+        return "HouseHold{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", idcard='" + idcard + '\'' +
@@ -107,11 +107,11 @@ public class HouseHould {
         this.gender = gender;
     }
 
-    public String getHiredate() {
+    public Date getHiredate() {
         return hiredate;
     }
 
-    public void setHiredate(String hiredate) {
+    public void setHiredate(Date hiredate) {
         this.hiredate = hiredate;
     }
 
