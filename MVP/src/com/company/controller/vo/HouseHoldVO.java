@@ -3,21 +3,21 @@ package com.company.controller.vo;
 import java.util.Date;
 
 public class HouseHoldVO {
-    private int id;
+    private Integer id;
     private String name;
-    private String idcard;
-    private String mpbile;
+    private String idCard;
+    private String mobile;
     private String occupation;
     private Date birthday;
     private String gender;
     private Date begin;
     private Date end;
 
-    public HouseHoldVO(int id, String name, String idcard, String mpbile, String occupation, Date birthday, String gender, Date begin, Date end) {
+    public HouseHoldVO(Integer id, String name, String idCard, String mobile, String occupation, Date birthday, String gender, Date begin, Date end) {
         this.id = id;
         this.name = name;
-        this.idcard = idcard;
-        this.mpbile = mpbile;
+        this.idCard = idCard;
+        this.mobile = mobile;
         this.occupation = occupation;
         this.birthday = birthday;
         this.gender = gender;
@@ -25,11 +25,11 @@ public class HouseHoldVO {
         this.end = end;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -41,20 +41,20 @@ public class HouseHoldVO {
         this.name = name;
     }
 
-    public String getIdcard() {
-        return idcard;
+    public String getIdCard() {
+        return idCard;
     }
 
-    public void setIdcard(String idcard) {
-        this.idcard = idcard;
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
-    public String getMpbile() {
-        return mpbile;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMpbile(String mpbile) {
-        this.mpbile = mpbile;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public String getOccupation() {

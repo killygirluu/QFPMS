@@ -13,7 +13,26 @@ public class Vehicle {
     private Date hiredate;
     private int del;
 
-    public Vehicle(int id, int hhid, String licenseplate, String color, String desc, String img, String carport, Date hiredate, int del) {
+    public Vehicle(int hhid, String licenseplate, String color, String desc, String carport, Date hiredate) {
+        this.hhid = hhid;
+        this.licenseplate = licenseplate;
+        this.color = color;
+        this.desc = desc;
+        this.carport = carport;
+        this.hiredate = hiredate;
+    }
+
+    public Vehicle(int id, int hhid, String licenseplate, String color, String desc, String carport, Date hiredate) {
+        this.id = id;
+        this.hhid = hhid;
+        this.licenseplate = licenseplate;
+        this.color = color;
+        this.desc = desc;
+        this.carport = carport;
+        this.hiredate = hiredate;
+    }
+
+    public Vehicle(int id, int hhid, String licenseplate, String color, String desc, String img, String carport, Date hiredate) {
         this.id = id;
         this.hhid = hhid;
         this.licenseplate = licenseplate;
@@ -22,10 +41,9 @@ public class Vehicle {
         this.img = img;
         this.carport = carport;
         this.hiredate = hiredate;
-        this.del = del;
     }
 
-    public Vehicle(int hhid, String licenseplate, String color, String desc, String img, String carport, Date hiredate, int del) {
+    public Vehicle(int hhid, String licenseplate, String color, String desc, String img, String carport, Date hiredate) {
         this.hhid = hhid;
         this.licenseplate = licenseplate;
         this.color = color;
@@ -33,7 +51,6 @@ public class Vehicle {
         this.img = img;
         this.carport = carport;
         this.hiredate = hiredate;
-        this.del = del;
     }
 
     @Override

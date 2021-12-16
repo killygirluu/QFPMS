@@ -5,7 +5,7 @@ import java.util.Date;
 public class HouseHold {
     public int id;
     public String name;
-    public String idcard;
+    public String idCard;
     public String mobile;
     public String occupation;
     public Date birthday;
@@ -13,21 +13,30 @@ public class HouseHold {
     public Date hiredate;
     public int del;
 
-    public HouseHold(int id, String name, String idcard, String mobile, String occupation, Date birthday, String gender, Date hiredate, int del) {
+    public HouseHold(int id, String name, String idCard, String mobile, String occupation, Date birthday, String gender, Date hiredate) {
         this.id = id;
         this.name = name;
-        this.idcard = idcard;
+        this.idCard = idCard;
         this.mobile = mobile;
         this.occupation = occupation;
         this.birthday = birthday;
         this.gender = gender;
         this.hiredate = hiredate;
-        this.del = del;
     }
 
-    public HouseHold(String name, String idcard, String mobile, String occupation, Date birthday, String gender, Date hiredate, int del) {
+    public HouseHold(String name, String idCard, String mobile, String occupation, Date birthday, String gender, Date hiredate) {
         this.name = name;
-        this.idcard = idcard;
+        this.idCard = idCard;
+        this.mobile = mobile;
+        this.occupation = occupation;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.hiredate = hiredate;
+    }
+
+    public HouseHold(String name, String idCard, String mobile, String occupation, Date birthday, String gender, Date hiredate, int del) {
+        this.name = name;
+        this.idCard = idCard;
         this.mobile = mobile;
         this.occupation = occupation;
         this.birthday = birthday;
@@ -41,7 +50,7 @@ public class HouseHold {
         return "HouseHold{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", idcard='" + idcard + '\'' +
+                ", idCard='" + idCard + '\'' +
                 ", mobile='" + mobile + '\'' +
                 ", occupation='" + occupation + '\'' +
                 ", birthday=" + birthday +
@@ -67,12 +76,12 @@ public class HouseHold {
         this.name = name;
     }
 
-    public String getIdcard() {
-        return idcard;
+    public String getIdCard() {
+        return idCard;
     }
 
-    public void setIdcard(String idcard) {
-        this.idcard = idcard;
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
     public String getMobile() {
