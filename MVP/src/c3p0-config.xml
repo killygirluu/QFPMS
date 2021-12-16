@@ -3,7 +3,7 @@
     <!--默认配置 -->
     <default-config>
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/test</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/com</property>
         <property name="user">root</property>
         <property name="password">youyou</property>
         <property name="initialPoolSize">10</property>
@@ -16,7 +16,7 @@
     <!--配置连接池mysql -->
     <named-config name="test_c3p0">
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/com?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC</property>
         <property name="user">root</property>
         <property name="password">youyou</property>
         <property name="initialPoolSize">10</property>
