@@ -24,6 +24,10 @@ public class HouseHold {
         this.hiredate = hiredate;
     }
 
+    public HouseHold(int id) {
+        this.id = id;
+    }
+
     public HouseHold(String name, String idCard, String mobile, String occupation, Date birthday, String gender, Date hiredate) {
         this.name = name;
         this.idCard = idCard;
@@ -55,8 +59,7 @@ public class HouseHold {
                 ", occupation='" + occupation + '\'' +
                 ", birthday=" + birthday +
                 ", gender='" + gender + '\'' +
-                ", hiredate='" + hiredate + '\'' +
-                ", del=" + del +
+                ", hiredate=" + hiredate +
                 '}';
     }
 

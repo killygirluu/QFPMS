@@ -22,7 +22,7 @@ public class VehicleDao implements IVehicleDao {
         pstmt.setString(3, vehicle.getColor());
         pstmt.setString(4, vehicle.getDesc());
         pstmt.setString(5, vehicle.getCarport());
-        pstmt.setDate(6, (java.sql.Date) vehicle.getHiredate());
+        pstmt.setDate(6, new java.sql.Date(vehicle.getHiredate().getTime()));
         int flag = pstmt.executeUpdate();
         DBUtil.close(null, pstmt, conn);
         return flag;
@@ -49,7 +49,7 @@ public class VehicleDao implements IVehicleDao {
         pstmt.setString(3, vehicle.getColor());
         pstmt.setString(4, vehicle.getDesc());
         pstmt.setString(5, vehicle.getCarport());
-        pstmt.setDate(6, (java.sql.Date) vehicle.getHiredate());
+        pstmt.setDate(6, new java.sql.Date(vehicle.getHiredate().getTime()));
         pstmt.setInt(7, vehicle.getId());
         int flag = pstmt.executeUpdate();
         DBUtil.close(null, pstmt, conn);

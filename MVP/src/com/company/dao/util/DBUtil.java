@@ -12,6 +12,7 @@ public class DBUtil {
     // c3p0是一个类似于线程池的驱动程序池
     // 尺子里面可以连接各种数据库，但是需要在配置文件里面改参数
     private static ComboPooledDataSource dataSource = new ComboPooledDataSource("test_c3p0");
+    // 上面的参数和c3p0的配置文件相关，表示的是选择哪个连接池
     // 开放一个方法
     public static Connection getConnection(){
         Connection conn = null;
